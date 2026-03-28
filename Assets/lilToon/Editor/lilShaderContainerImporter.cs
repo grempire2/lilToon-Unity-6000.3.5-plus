@@ -1577,17 +1577,17 @@ namespace lilToon
         // Skip Variants
         private static string GetSkipVariantsShadows()
         {
-            return "#pragma skip_variants SHADOWS_SCREEN _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN _ADDITIONAL_LIGHT_SHADOWS SCREEN_SPACE_SHADOWS_ON SHADOW_LOW SHADOW_MEDIUM SHADOW_HIGH SHADOW_VERY_HIGH";
+            return "#pragma skip_variants SHADOWS_SCREEN SCREEN_SPACE_SHADOWS_ON SHADOW_LOW SHADOW_MEDIUM SHADOW_HIGH SHADOW_VERY_HIGH";
         }
 
         private static string GetSkipVariantsLightmaps()
         {
-            return "#pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE";
+            return "#pragma skip_variants _MIXED_LIGHTING_SUBTRACTIVE";
         }
 
         private static string GetSkipVariantsDecals()
         {
-            return "#pragma skip_variants DECALS_OFF DECALS_3RT DECALS_4RT DECAL_SURFACE_GRADIENT _DBUFFER_MRT1 _DBUFFER_MRT2 _DBUFFER_MRT3";
+            return "#pragma skip_variants DECALS_OFF DECALS_3RT DECALS_4RT DECAL_SURFACE_GRADIENT";
         }
 
         private static string GetSkipVariantsAddLight()
@@ -1598,7 +1598,7 @@ namespace lilToon
 
         private static string GetSkipVariantsAddLightShadows()
         {
-            return "#pragma skip_variants _ADDITIONAL_LIGHT_SHADOWS";
+            return "";
         }
 
         private static string GetSkipVariantsProbeVolumes()
@@ -1609,7 +1609,7 @@ namespace lilToon
 
         private static string GetSkipVariantsAO()
         {
-            return "#pragma skip_variants _SCREEN_SPACE_OCCLUSION";
+            return "";
         }
 
         private static string GetSkipVariantsLightLists()
@@ -1619,7 +1619,7 @@ namespace lilToon
 
         private static string GetSkipVariantsReflections()
         {
-            return "#pragma skip_variants _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION";
+            return "";
         }
 
         //------------------------------------------------------------------------------------------------------------------------------
